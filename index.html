@@ -150,66 +150,11 @@
                 <span id="spinBtnText">Girar Roleta</span>
             </button>
 
-            <!-- Dev Test Toggle (allows resetting 24h lock for easy testing) -->
-            <button onclick="resetCooldownDev()" class="text-[10px] text-slate-500 hover:text-amber-400 transition underline flex items-center gap-1 mt-1">
-                <i class="fa-solid fa-flask text-amber-500/70"></i>
-                <span>Resetar Timer 24h (Modo Teste)</span>
-            </button>
-
             <!-- Pending Prize Reminder (shown until prize is marked as claimed) -->
-            <button id="pendingPrizeBanner" onclick="openPendingPrize()" class="hidden w-full py-2.5 px-4 rounded-xl bg-cyan-500/10 border border-cyan-400/40 text-cyan-300 text-xs font-bold uppercase tracking-wide items-center justify-center gap-2 hover:bg-cyan-500/20 transition">
-                <i class="fa-solid fa-gift"></i>
+            <button id="pendingPrizeBanner" onclick="openPendingPrize()" class="hidden w-full py-4 px-4 rounded-2xl bg-cyan-500/10 border-2 border-cyan-400/40 text-cyan-300 text-base font-black uppercase tracking-wide items-center justify-center gap-3 hover:bg-cyan-500/20 transition animate-pulse-glow">
+                <i class="fa-solid fa-gift text-xl"></i>
                 <span>Ver Meu Prêmio Pendente</span>
             </button>
-        </div>
-
-        <div class="w-full glass-panel p-4 rounded-2xl shadow-xl border border-slate-800">
-            <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center justify-between border-b border-slate-800 pb-2">
-                <span class="flex items-center gap-1.5"><i class="fa-solid fa-gift text-pink-400"></i> Prêmios & Probabilidade</span>
-                <span class="text-[10px] text-slate-500">100% Auditável</span>
-            </h2>
-            
-            <div class="grid grid-cols-2 gap-2 text-xs">
-                <!-- Copo -->
-                <div class="bg-slate-900/60 p-2.5 rounded-xl border border-pink-500/20 flex items-center gap-2.5">
-                    <div class="w-8 h-8 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center text-sm shrink-0">
-                        <i class="fa-solid fa-wine-glass"></i>
-                    </div>
-                    <div class="overflow-hidden">
-                        <p class="font-bold text-slate-100 truncate">Copo Evento</p>
-                    </div>
-                </div>
-
-                <!-- Cerveja -->
-                <div class="bg-slate-900/60 p-2.5 rounded-xl border border-amber-500/20 flex items-center gap-2.5">
-                    <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-sm shrink-0">
-                        <i class="fa-solid fa-beer-mug-empty"></i>
-                    </div>
-                    <div class="overflow-hidden">
-                        <p class="font-bold text-slate-100 truncate">Cerveja</p>
-                    </div>
-                </div>
-
-                <!-- Skol Beats -->
-                <div class="bg-slate-900/60 p-2.5 rounded-xl border border-purple-500/20 flex items-center gap-2.5">
-                    <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center text-sm shrink-0">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
-                    <div class="overflow-hidden">
-                        <p class="font-bold text-slate-100 truncate">1 Skol Beats</p>
-                    </div>
-                </div>
-
-                <!-- Combo -->
-                <div class="bg-slate-900/60 p-2.5 rounded-xl border border-cyan-500/20 flex items-center gap-2.5">
-                    <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-sm shrink-0">
-                        <i class="fa-solid fa-champagne-glasses"></i>
-                    </div>
-                    <div class="overflow-hidden">
-                        <p class="font-bold text-slate-100 truncate">Combo Whisky</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </main>
@@ -285,7 +230,12 @@
             <i class="fa-solid fa-volume-high text-amber-400"></i>
             <span>Som: Ligado</span>
         </button>
-        <p>Roleta Mobile</p>
+
+        <!-- Dev Test Toggle (allows resetting 24h lock for easy testing) -->
+        <button onclick="resetCooldownDev()" class="text-[10px] text-slate-500 hover:text-amber-400 transition underline inline-flex items-center gap-1">
+            <i class="fa-solid fa-flask text-amber-500/70"></i>
+            <span>Resetar Timer 24h (Modo Teste)</span>
+        </button>
     </footer>
 
     <script>
